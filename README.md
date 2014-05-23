@@ -13,7 +13,11 @@ First, you must install [vim-pathogen](https://github.com/tpope/vim-pathogen):
 Then, you can install this plugin in the `~/.vim/bundle` directory:
 
     cd ~/.vim/bundle
-    git clone git://github.com:mihai-sima/vim-config.git
+    git clone git://github.com/mihai-sima/vim-config.git
+    
+Finally, add a simple `~/.vimrc` file:
+    
+    echo "execute pathogen#infect()" > ~/.vimrc
     
 ## What is provided
 
