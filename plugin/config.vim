@@ -11,9 +11,6 @@ set keymodel=startsel
 
 set autochdir
 
-" Mouse
-" set mouse=a
-
 " Folding
 set foldenable
 set foldcolumn=5
@@ -23,14 +20,16 @@ set foldminlines=2
 
 " Number
 set number
+set relativenumber
 
 " nice indentation
 filetype plugin indent on
 set autoindent cindent noexpandtab smartindent
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set smarttab
 set linebreak
+set modelines=1
 
 " some useful mapings
 " save file
@@ -44,16 +43,6 @@ imap <C-right> <ESC>:bnext<CR>a
 " prev tab
 map <C-left> :bprev<CR>
 imap <C-left> <ESC>:bprev<CR>a
-
-" toggle NERDTree
-map <leader>t :NERDTreeToggle<CR>
-
-" toggle Tagbar
-map <leader>l :TagbarToggle<CR> 
-
-" errors, useful if you do lots of C(++)
-map < <ESC>:cprev<CR>
-map > <ESC>:cnext<CR>
 
 " better autocomplete
 function! TabComplete()
