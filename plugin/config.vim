@@ -1,3 +1,5 @@
+syntax on
+
 " some smart options
 set nocompatible
 set backspace=indent,eol,start
@@ -19,7 +21,6 @@ set foldmethod=indent
 set foldminlines=2
 
 " Number
-set number
 set relativenumber
 
 " nice indentation
