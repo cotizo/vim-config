@@ -32,19 +32,6 @@ set smarttab
 set linebreak
 set modelines=1
 
-" some useful mapings
-" save file
-imap <F2> <ESC>:w<CR>a
-map <F2> <ESC>:w<CR>
-
-" next tab
-map <C-right> :bnext<CR>
-imap <C-right> <ESC>:bnext<CR>a
-
-" prev tab
-map <C-left> :bprev<CR>
-imap <C-left> <ESC>:bprev<CR>a
-
 " better autocomplete
 function! TabComplete()
     if col('.') > 1 && strpart(getline('.'), col('.')-2, 3) =~ '^\w'
