@@ -25,22 +25,31 @@ set relativenumber
 
 " nice indentation
 filetype plugin indent on
-set autoindent cindent noexpandtab smartindent
+set autoindent expandtab smartindent
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
 set smarttab
 set linebreak
+
+" Special indent for Python
+au BufNewFile,BufRead *.py
+   \ set tabstop=4 |
+   \ set softtabstop=4 |
+   \ set shiftwidth=4 
+
+" Enable modelines (comments which configure vim)
 set modelines=1
 
 " better autocomplete
-function! TabComplete()
-    if col('.') > 1 && strpart(getline('.'), col('.')-2, 3) =~ '^\w'
-        return "\<C-N>"
-    else
-        return "\<Tab>"
-endfunction
-set completeopt=longest,menu
-inoremap <Tab> <C-R>=TabComplete()<Cr>
+" function! TabComplete()
+"    if col('.') > 1 && strpart(getline('.'), col('.')-2, 3) =~ '^\w'
+"        return "\<C-N>"
+"    else
+"        return "\<Tab>"
+" endfunction
+" set completeopt=longest,menu
+" inoremap <Tab> <C-R>=TabComplete()<Cr>
 
 " When editing a file, always jump to the last cursor position
 if has("autocmd")
