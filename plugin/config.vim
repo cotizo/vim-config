@@ -32,6 +32,9 @@ set shiftwidth=2
 set smarttab
 set linebreak
 
+" Per-project config
+set exrc
+
 " Special indent for Python
 au BufNewFile,BufRead *.py
    \ set tabstop=4 |
