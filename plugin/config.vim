@@ -11,8 +11,6 @@ set bg=dark
 set wrap
 set keymodel=startsel
 
-set autochdir
-
 " Folding
 set foldenable
 set foldcolumn=5
