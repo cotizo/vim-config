@@ -44,16 +44,6 @@ au BufNewFile,BufRead *.py
 " Enable modelines (comments which configure vim)
 set modelines=1
 
-" better autocomplete
-" function! TabComplete()
-"    if col('.') > 1 && strpart(getline('.'), col('.')-2, 3) =~ '^\w'
-"        return "\<C-N>"
-"    else
-"        return "\<Tab>"
-" endfunction
-" set completeopt=longest,menu
-" inoremap <Tab> <C-R>=TabComplete()<Cr>
-
 " When editing a file, always jump to the last cursor position
 if has("autocmd")
   autocmd BufReadPost *
